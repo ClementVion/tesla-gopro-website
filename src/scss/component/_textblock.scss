@@ -1,0 +1,57 @@
+.textBlock {
+  
+}
+
+.textBlock__container {
+  margin: auto;
+  width: 510px;
+}
+
+.textBlock_nav {
+  display: flex;
+  justify-content: space-between;
+  
+  &--alignStart {
+    justify-content: flex-start;
+    
+    li {
+      margin-right: 30px;
+    }
+  }
+}
+
+.textBlock_navItem {
+  font-weight: 500;
+  font-size: 2.7rem;
+  margin-bottom: 50px;
+  color: $second-color;
+  cursor: pointer;
+  
+  &--selected {
+    color: $main-color;
+    font-weight: 900;
+  }
+}
+
+.textBlock__title {
+  font-size: 4.7rem;
+  width: 475px;
+  line-height: 1.4;
+  
+  &--large {
+    width: 100%;
+  }
+}
+
+.textBlock__desc {
+  font-size: 2rem;
+  margin: 50px 0;
+  width: 600px;
+  line-height: 1.5;
+  color: $second-color;
+  width: 415px;
+  
+  &--large {
+    width: 100%;
+  }
+}
