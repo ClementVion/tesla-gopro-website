@@ -1,0 +1,49 @@
+.footer {
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 4.7rem;
+  margin: 20px 0;
+}
+
+.footer__desc {
+  font-size: 1.7rem;
+  color: $second-color;
+  font-weight: 500;
+}
+
+.footer__buttons {
+  margin: 50px auto;
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__button.button {
+  width: 235px;
+  height: 60px;
+  
+  &:nth-child(2) {
+    background: #232323;
+  }
+}
+
+.footer__nav {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.footer__navItem {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.footer__copyrights {
+  margin: 80px 0 35px 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: $second-color;
+}
