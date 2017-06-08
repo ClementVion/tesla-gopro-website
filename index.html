@@ -40,11 +40,24 @@
       <img src="img/car.png" alt="" class="hero__img">
       
       <div class="hero__left">
-        <h1 class="hero__title">Drive. Capture. Rewind.</h1>    
-        <p class="hero__desc">We’ve been working hard on bringing a new brand product while working with Tesla. We’re proud today to show you a first glance at our product. </p>
-        <div class="button button--withImage">
-          <img src="img/play.svg" alt="" class="button__img">
-          <span class="button__text button__text--big">Watch video</span>
+        <h1 class="hero__title blockReveal">
+          <span class="blockReveal__content"> Drive. Capture. Rewind.</span>
+          <div class="blockReveal__elm blockReveal__elm--blue"></div>
+        </h1>    
+        <div class="hero__desc">
+          <div class="blockReveal">
+            <span class="blockReveal__content">We’ve been working hard on bringing a new brand product while working with Tesla. </span>
+            <div class="blockReveal__elm blockReveal__elm--grey"></div>
+          </div>
+          <div class="blockReveal">
+            <span class="blockReveal__content">We’re proud today to show you a first glance at our product. </span>
+            <div class="blockReveal__elm blockReveal__elm--grey"></div>
+          </div>
+        </div>
+        <div class="button button--withImage blockReveal blockReveal--button">
+          <img src="img/play.svg" alt="" class="button__img blockReveal__content">
+          <span class="button__text button__text--big blockReveal__content">Watch video</span>
+          <div class="blockReveal__elm blockReveal__elm--blue"></div>
         </div>
       </div>
       
@@ -165,5 +178,17 @@
     
   </footer>
   
+  <div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  
+  <script src="./js/bundle.js"></script>
 </body>
 </html>

@@ -26,6 +26,25 @@
   width: 600px;
   line-height: 1.5;
   color: $second-color;
+  
+  .blockReveal {
+    &:nth-child(1) {
+      .blockReveal__content--animated {
+        animation-delay: 0.3s;
+      }
+      .blockReveal__elm--animated {
+        animation-delay: 0.3s;
+      }
+    }
+    &:nth-child(2) {
+      .blockReveal__content--animated {
+        animation-delay: 0.5s;
+      }
+      .blockReveal__elm--animated {
+        animation-delay: 0.5s;
+      }
+    }
+  }
 }
 
 .hero__button {}

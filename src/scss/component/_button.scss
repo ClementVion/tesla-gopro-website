@@ -15,12 +15,29 @@
 .button__img {
   width: 45px;
   margin: 0 50px 0 25px;
+  position: absolute;
+  z-index: 10;
 }
 
 .button__text {
   font-size: 1.6rem;
+  position: absolute;
+  z-index: 10;
   
   &--big {
     font-size: 2rem;
+  }
+}
+
+.button.blockReveal {
+  animation-delay: 0.9s;
+  background: none;
+  display: flex;
+  
+  .blockReveal__elm {
+    z-index: 0;
+  }
+  span.blockReveal__content {
+    right: 80px;
   }
 }
