@@ -1,0 +1,26 @@
+.contentNav {
+  height: 150px;
+  border-top: solid thin #393939;
+  border-bottom: solid thin #393939;
+  background: #000;
+}
+
+.contentNav__list {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.contentNav__item {
+  height: 100%;
+  font-size: 2.7rem;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+  
+  &--selected {
+    color: $main-color;
+    border-bottom: solid thin $main-color; 
+  }
+}
