@@ -1,0 +1,26 @@
+.button {
+  background: $main-color;
+  width: 280px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  &--withImage {
+    justify-content: flex-start;
+  }
+}
+
+.button__img {
+  width: 45px;
+  margin: 0 50px 0 25px;
+}
+
+.button__text {
+  font-size: 1.6rem;
+  
+  &--big {
+    font-size: 2rem;
+  }
+}

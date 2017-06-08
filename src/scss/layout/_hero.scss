@@ -1,0 +1,37 @@
+.hero {
+  margin: 100px 0 0 0;
+  display: flex;
+}
+
+.hero__container {
+  position: relative;
+  margin-left: 8.5%;
+  width: 100%;
+}
+
+.hero__left {
+  position: absolute;
+  top: 0;
+}
+
+.hero__title {
+  font-size: 8.0rem;
+  font-weight: 900;
+}
+
+.hero__desc {
+  font-size: 2rem;
+  margin: 50px 0;
+  width: 600px;
+  line-height: 1.5;
+  color: #969696;
+}
+
+.hero__button {}
+
+.hero__img {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 900px;
+}

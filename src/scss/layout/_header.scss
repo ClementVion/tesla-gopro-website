@@ -1,0 +1,42 @@
+.header {
+  font-weight: 900;
+  font-size: 1.6rem;
+  height: 140px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+}
+
+.header__left {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  width: 150px;
+}
+
+.header__nav {
+  width: 400px;
+  margin: 0 0 0 90px 
+}
+
+.header__navList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__navItem {
+  cursor: pointer;
+}
+
+.button.header__button {
+  width: 210px;
+  height: 50px;
+}
