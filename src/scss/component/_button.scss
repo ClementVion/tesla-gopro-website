@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  overflow: hidden;
   
   &--withImage {
     justify-content: flex-start;
@@ -39,4 +40,29 @@
   span.blockReveal__content {
     right: 80px;
   }
+}
+
+.button:hover {
+  
+  .button__hover{
+    transform: translateX(0);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .button__img g {
+    stroke: $main-color;
+  }
+    
+  .button__text {
+    color: $main-color;
+  }
+}
+
+.button__hover {
+  width: 100%;
+  height: 100%;
+  // background: #3385A9;
+  background: #FFF;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-out;
 }

@@ -14,4 +14,23 @@
   border-right: solid thin #222;
   width: 12.5%;
   height: 100%;
+  position: relative;
+}
+
+.line__stroke {
+  position: absolute;
+  right: -1px;
+  background: $main-color;
+  width: 3px;
+  height: 84px;
+  
+  &--first {
+    top: 600px;
+  }  
+  &--second {
+    top: 200px;
+  }
+  &--third {
+    top: 650px;
+  }
 }

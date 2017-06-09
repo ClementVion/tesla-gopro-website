@@ -13,6 +13,7 @@ for(let i = 0; i < blockRevealsContent.length; i++) {
 
 // Scroll events
 let appearElms = document.querySelectorAll('.appear');
+let parallaxElms = document.querySelectorAll('[data-parallax="true"]');
 
 draw();
 
@@ -27,8 +28,14 @@ function scrollEvent() {
   let viewportTop = $(window).scrollTop();
   let windowHeight = $(window).height();
   let viewportBottom = windowHeight+viewportTop;
-
-  console.log(appearElms);
+  
+  // Parallax elements
+    for (let elm of parallaxElms) {
+      let sym = '';
+      let distance = viewportTop * parseFloat(elm.getAttribute('data-speed'));
+      if (elm.getAttribute('data-direction') === 'up'){ sym = '-'; } else { sym = ''; }
+      elm.style.transform = 'translate3d(0, ' + sym + distance + 'px,0)';
+    }
   
   // Appear elements
   for (let i = 0; i < appearElms.length; i++) {
