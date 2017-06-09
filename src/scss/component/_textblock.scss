@@ -26,11 +26,39 @@
   margin-bottom: 50px;
   color: $second-color;
   cursor: pointer;
+  transform: translateY(-20px);
+  opacity: 0;
   
   &--selected {
     color: $main-color;
     font-weight: 900;
   }
+}
+
+.textBlock_nav.appeared {
+  
+  .textBlock_navItem {
+    animation: fadeInFromTop 0.7s forwards ease;
+    
+    &:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+    &:nth-child(6) {
+      animation-delay: 0.6s;
+    } 
+  }     
 }
 
 .textBlock__title {
@@ -72,26 +100,26 @@
     
     &:nth-child(1) {
       .blockReveal__content {
-        animation-delay: 0.5s;
+        animation-delay: 0.4s;
       }
       .blockReveal__elm {
-        animation-delay: 0.5s;
+        animation-delay: 0.4s;
       }
     }
     &:nth-child(2) {
       .blockReveal__content {
-        animation-delay: 0.7s;
+        animation-delay: 0.6s;
       }
       .blockReveal__elm {
-        animation-delay: 0.7s;
+        animation-delay: 0.6s;
       }
     }
     &:nth-child(3) {
       .blockReveal__content {
-        animation-delay: 0.9s;
+        animation-delay: 0.7s;
       }
       .blockReveal__elm {
-        animation-delay: 0.9s;
+        animation-delay: 0.7s;
       }
     }
   }
