@@ -42,6 +42,11 @@
   width: 235px;
   height: 60px;
   
+  .button__text {
+    line-height: 3.5;
+    left: 0;
+  }
+  
   &:nth-child(2) {
     background: #232323;
   }

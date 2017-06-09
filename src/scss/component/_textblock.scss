@@ -122,5 +122,13 @@
         animation-delay: 0.7s;
       }
     }
+    &:nth-child(4) {
+      .blockReveal__content {
+        animation-delay: 0.8s;
+      }
+      .blockReveal__elm {
+        animation-delay: 0.8s;
+      }
+    }
   }
 }
