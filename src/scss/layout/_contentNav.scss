@@ -19,9 +19,34 @@
   padding: 0 30px;
   cursor: pointer;
   color: $second-color;
+  transform: translateY(-20px);
+  opacity: 0;
   
   &--selected {
     color: $main-color;
     border-bottom: solid thin $main-color; 
+  }
+}
+
+.contentNav__list.appeared {  
+  
+  .contentNav__item {
+    animation: fadeInFromTop 0.7s forwards ease;
+    
+    &:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.5s;
+    }
   }
 }

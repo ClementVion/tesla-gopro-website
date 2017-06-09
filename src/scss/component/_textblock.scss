@@ -41,6 +41,19 @@
   &--large {
     width: 100%;
   }
+  
+  .blockReveal {
+    animation: none;
+
+    &:nth-child(2) {
+      .blockReveal__content {
+        animation-delay: 0.3s;
+      }
+      .blockReveal__elm {
+        animation-delay: 0.3s;
+      }
+    }
+  }
 }
 
 .textBlock__desc {
@@ -53,5 +66,33 @@
   
   &--large {
     width: 100%;
+  }
+  
+  .blockReveal {
+    
+    &:nth-child(1) {
+      .blockReveal__content {
+        animation-delay: 0.5s;
+      }
+      .blockReveal__elm {
+        animation-delay: 0.5s;
+      }
+    }
+    &:nth-child(2) {
+      .blockReveal__content {
+        animation-delay: 0.7s;
+      }
+      .blockReveal__elm {
+        animation-delay: 0.7s;
+      }
+    }
+    &:nth-child(3) {
+      .blockReveal__content {
+        animation-delay: 0.9s;
+      }
+      .blockReveal__elm {
+        animation-delay: 0.9s;
+      }
+    }
   }
 }

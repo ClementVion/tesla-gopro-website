@@ -5,6 +5,9 @@
   position: fixed;
   top: 0;
   z-index: -10;
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: fadeInFromTop 0.7s 1s ease forwards;
 }
 
 .line {

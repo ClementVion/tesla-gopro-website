@@ -69,7 +69,9 @@ gulp.task('images', function() {
 gulp.task('scripts', function() {
 
     browserify({ debug: true })
-		    .transform(babelify)
+		    .transform(babelify.configure({
+          presets: ["es2015"]
+        }))
 		    .require(config.path + '/src/js/main.js', { entry: true })
 		    .bundle()
 		    .on('error', gutil.log)
